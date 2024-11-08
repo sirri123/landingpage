@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #eee;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header, .hero, .features, .testimonials, footer {
+    padding: 2rem 0;
+}
+
+h1 {
+    color: #00b894;
+    font-size: 2.5rem;
+}
+
+.slogan {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+h2 {
+    color: #00cec9;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #b2bec3;
+    line-height: 1.6;
+}
+
+.call-button {
+    background-color: #0984e3;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.call-button:hover {
+    background-color: #74b9ff;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.feature-item {
+    width: 280px;
+    text-align: left;
+}
+
+.feature-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.testimonials {
+    background-color: #2d3436;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    color: #dfe6e9;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    border-top: 1px solid #636e72;
+    color: #b2bec3;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: #81ecec;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #00cec9;
+}
+header .container img {
+    width: 100%;  /* Make the image scale to 100% of the parent container's width */
+    height: auto; /* Ensure the aspect ratio is maintained */
+    max-width: 300px; /* Optional: Set a max-width for larger screens */
+    display: block; /* Remove any unwanted space below the image */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Additional styles for other elements inside the container */
+header .container h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+header .container .slogan {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+}
+
+header .container .call-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #f57c00; /* Call-to-action button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+    header .container img {
+        max-width: 250px; /* Adjust max-width for tablets */
+    }
+
+    header .container h1 {
+        font-size: 1.8rem;
+    }
+
+    header .container .slogan {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 480px) {
+    header .container img {
+        max-width: 200px; /* Adjust max-width for mobile screens */
+    }
+
+    header .container h1 {
+        font-size: 1.5rem;
+    }
+
+    header .container .slogan {
+        font-size: 0.9rem;
+    }
+}
